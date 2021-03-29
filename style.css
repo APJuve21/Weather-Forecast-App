@@ -1,0 +1,494 @@
+body {
+	background-color: rgba(226, 231, 253, 0.966);
+	font-family: sans-serif;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 25px;
+	margin-left: 5px;
+	margin-right: 5px;
+	flex-wrap: wrap;
+}
+.header {
+	background-color: rgba(177, 190, 248, 0.966);
+	border-radius: 10px;
+	margin-top: 10px;
+	box-shadow: 3px 3px 3px 1px lightgrey;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.header_title {
+	font-size: 20px;
+	font-weight: bold;
+	padding-top: 15px;
+	padding-left: 10px;
+	padding-right: 5px;
+	flex-wrap: wrap;
+	background: transparent;
+}
+
+.header_info {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	font-size: 30px;
+	background: transparent;
+}
+
+.current_icon {
+	background-color: antiquewhite;
+	margin: 5px;
+	background: transparent;
+}
+.current_temp {
+	background-color: antiquewhite;
+	margin: 5px;
+	font-weight: bold;
+	background: transparent;
+}
+.current_humidity {
+	background-color: antiquewhite;
+	margin: 5px;
+	background: transparent;
+}
+.current_rainfall {
+	background-color: antiquewhite;
+	margin: 5px;
+	background: transparent;
+}
+.current_uv {
+	background-color: antiquewhite;
+	margin: 5px;
+	background: transparent;
+}
+.warning {
+	border-radius: 10px;
+	display: block;
+	background-color: rosybrown;
+	background: transparent;
+}
+
+.last_update {
+	font-size: 10px;
+	display: block;
+	text-align-last: right;
+	background-color: royalblue;
+	background: transparent;
+	margin-right: 5px;
+}
+
+#warningButton {
+	background-color: #f08282d8;
+	border: none;
+	padding: 5px 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	margin-right: 5px;
+	border-radius: 5px;
+	overflow: scroll;
+	object-fit: contain;
+}
+
+#warningMessage {
+	background-color: #f08282d8;
+	border: none;
+	padding: 5px 5px;
+	font-size: 16px;
+	border-radius: 5px;
+	overflow: scroll;
+	object-fit: contain;
+}
+
+.mydata {
+	background-color: paleturquoise;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border-radius: 10px;
+	margin-top: 10px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background: transparent;
+}
+
+.location_title {
+	font-size: 20px;
+	font-weight: bold;
+	padding-top: 15px;
+	padding-left: 10px;
+	padding-right: 5px;
+	flex-wrap: wrap;
+	background: transparent;
+}
+.location_block {
+	background-color: rgb(163, 221, 255);
+	box-shadow: 3px 3px 3px 1px lightgrey;
+	border-radius: 10px;
+	width: 64%;
+	font-size: 15px;
+	display: flex;
+	vertical-align: text-bottom;
+	font-weight: bold;
+	overflow: scroll;
+}
+
+.location_district {
+	display: flex;
+	background-color: steelblue;
+	background: transparent;
+	padding-top: 65px;
+	padding-bottom: 10px;
+	padding-right: 5px;
+	width: 30%;
+}
+
+.location_temp {
+	font-size: 15px;
+	background-color: red;
+	background: transparent;
+	width: 10%;
+	padding-top: 65px;
+	padding-bottom: 10px;
+	padding-left: 40px;
+	padding-right: 35px;
+}
+
+.location_risk {
+	font-size: 25px;
+	background-color: blue;
+	background: transparent;
+	padding-top: 15px;
+	padding-right: 30px;
+}
+
+.location_suburb {
+	display: flex;
+	background-color: tomato;
+	width: 10%;
+	background: transparent;
+	padding-top: 65px;
+	padding-right: 30px;
+	padding-bottom: 10px;
+}
+
+.location_rainfall {
+	display: flex;
+	width: 20%;
+	height: 100%;
+	background-color: rgba(226, 231, 253, 0.966);
+	background: transparent;
+}
+
+.location_rainfall_img {
+	background-color: violet;
+	height: 50px;
+	background: transparent;
+	padding-top: 0px;
+	margin-top: 20px;
+	padding-right: 5px;
+	width: 50%;
+	border-style: none;
+	border-width: 0px;
+}
+
+.location_rainfall_value {
+	background-color: yellow;
+	font-size: 15px;
+	background: transparent;
+	padding-top: 65px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+}
+
+.location_risk {
+	width: 20%;
+	padding-top: 15px;
+	padding-right: 30px;
+	font-size: 15px;
+	padding-bottom: 10px;
+}
+
+.temp_title {
+	font-size: 20px;
+	font-weight: bold;
+	padding-top: 15px;
+	padding-left: 10px;
+	padding-right: 5px;
+	flex-wrap: wrap;
+	background: transparent;
+}
+
+.temp_block {
+	background-color: rgb(163, 221, 255);
+	box-shadow: 3px 3px 3px 1px lightgrey;
+	border-radius: 10px;
+	width: 35%;
+	overflow: scroll;
+}
+
+.temp_dropdown {
+	margin-left: 15px;
+}
+
+#temp_report {
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.myforecast {
+	margin-top: 10px;
+	background-color: rgb(163, 221, 255);
+	justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px 1px lightgrey;
+	padding-right: 8px;
+}
+
+.forecast_title {
+	font-size: 25px;
+	font-weight: bold;
+	padding-top: 15px;
+	padding-left: 10px;
+	padding-right: 5px;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+	text-align: center;
+	background-color: slateblue;
+	border-radius: 10px;
+	height: 30px;
+	width: 100%;
+	background: transparent;
+}
+
+.forecast_block {
+	width: 20%;
+	height: 30%;
+	margin: 20px;
+	background-color: rgb(215, 244, 255);
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	border-radius: 20px;
+	text-align: center;
+	font-size: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-left: 10px;
+}
+
+.forecast_img {
+	background-color: snow;
+	width: 90%;
+	background: transparent;
+}
+
+@media only screen and (max-width: 555px) {
+	.location_block {
+		font-size: 80%;
+		padding-left: 20px;
+		align-items: center;
+		width: 100%;
+	}
+
+	.temp_block {
+		margin-top: 10px;
+	}
+
+	.location_temp {
+		margin-right: 0px;
+		width: 100%;
+	}
+
+	.temp_block {
+		width: 100%;
+	}
+
+	#temp_report {
+		font-size: 35px;
+	}
+
+	.temp_dropdown {
+		width: 50%;
+	}
+
+	.myforecast {
+		overflow: scroll;
+	}
+
+	.forecast_block {
+		display: inline-block;
+		font-size: 15px;
+		padding-right: 3px;
+		margin-right: 3px;
+		overflow: scroll;
+	}
+}
+@media only screen and (max-width: 400px) {
+	.title {
+		font-size: 20px;
+	}
+
+	.temp_title {
+		font-size: 15px;
+	}
+
+	#temp_report {
+		font-size: 10px;
+	}
+
+	.header_title {
+		font-size: 15px;
+	}
+
+	.header_info {
+		font-size: 20px;
+	}
+
+	.location_title {
+		font-size: 15px;
+	}
+
+	.temp_title {
+		font-size: 25px;
+	}
+
+	.warning {
+		flex-direction: column;
+		max-width: 100%;
+	}
+	#warningButton {
+		margin-right: 0px;
+	}
+	.current_icon_img {
+		width: 100%;
+		background-color: rosybrown;
+	}
+
+	.mydata {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.location_block {
+		width: 100%;
+		align-self: flex-start;
+	}
+	.temp_block {
+		width: 100%;
+	}
+
+	.forecast_title {
+		font-size: 60%;
+		width: 100%;
+	}
+
+	.forecast_block {
+		font-size: 80%;
+		width: 100%;
+		margin-right: 0px;
+		padding-right: 10px;
+		padding-bottom: 10px;
+	}
+}
+
+@media only screen and (max-width: 140px) {
+	.header {
+		height: 100%;
+		width: 100%;
+		margin-right: 10px;
+	}
+
+	.location_block {
+		flex-direction: column;
+	}
+
+	.mydata {
+		height: 100%;
+		width: 100%;
+		margin-right: 10px;
+		display: inline-block;
+	}
+
+	.title {
+		font-size: 50%;
+		width: 100%;
+	}
+
+	.forecast_block {
+		font-size: 50%;
+	}
+
+	.header_title {
+		font-size: 10px;
+	}
+
+	.header_info {
+		font-size: 10px;
+		display: inline-block;
+	}
+
+	.location_title {
+		font-size: 10px;
+	}
+
+	.temp_title {
+		font-size: 10px;
+	}
+
+	.warning {
+		flex-direction: column;
+		max-width: 100%;
+	}
+	#warningButton {
+		margin-right: 0px;
+		font-size: 10px;
+		display: inline-block;
+	}
+
+	#warningMessage {
+		margin-right: 0px;
+		font-size: 10px;
+		display: inline-block;
+	}
+	.current_icon_img {
+		width: 30%;
+		height: 30%;
+		background-color: rosybrown;
+	}
+	.current_rainfall_icon_img {
+		width: 30%;
+		height: 30%;
+		background-color: rosybrown;
+	}
+	.current_humidity_icon_img {
+		width: 30%;
+		height: 30%;
+		background-color: rosybrown;
+	}
+	.current_uv_icon_img {
+		width: 30%;
+		height: 30%;
+		background-color: rosybrown;
+	}
+	.last_update {
+		display: inlie-block;
+		font-size: 8px;
+		overflow: scroll;
+	}
+}
